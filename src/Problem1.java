@@ -1,4 +1,4 @@
-public class Problems {
+public class Problem1 {
 
   private int number = 3;
 
