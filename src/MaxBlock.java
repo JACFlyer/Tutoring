@@ -12,15 +12,25 @@
 
 public class MaxBlock {
   public int maxBlock(String str) {
+    int longestBlock = 0;
 
+    char previousChar = 0;
+    int currentBlock = 0;
 
-    return 0;
-
-
-
-
-
-
-
+    for (char c : str.toCharArray()) {
+      if (c == previousChar) {
+        currentBlock++;
+      } else {
+        if (currentBlock > longestBlock) {
+          longestBlock = currentBlock;
+        }
+        currentBlock = 1;
+        previousChar = c;
+      }
+    }
+    if (currentBlock > longestBlock) {
+      longestBlock = currentBlock;
+    }
+    return longestBlock;
   }
-}
+  }

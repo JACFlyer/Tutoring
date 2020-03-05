@@ -57,3 +57,14 @@ public class LuckySum {
   }
 }
 
+/** int sum = 0;
+ for (int val : new int[]{a, b, c}) {
+ if (val == 13) {
+ break;
+
+ }
+ sum += val;
+ }
+ return sum;
+ }
+ **/
